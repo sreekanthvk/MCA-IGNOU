@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>University Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+<body>
+  <div class="wrapper">
+    <h1>Registration</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <form onsubmit="return validate();">
+      <div class="form-element">
+        <label>Name of Student</label>
+        <input id="stdName" name="stdName" type="text">
+      </div>
+      <div class="form-element">
+        <label>Email</label>
+        <input id="stdEmail" name="stdEmail" type="email">
+      </div>
+      <div class="form-element">
+        <label>Phone Number</label>
+        <input id="stdPhone" name="stdPhone" type="text">
+      </div>
+      <div class="form-element">
+        <label>Qualification of Student</label>
+        <input id="stdQual" name="stdQual" type="text">
+      </div>
+      <div class="form-element">
+        <label>Programme</label>
+        <select id="stdProgramme" name="stdProgramme">
+          <option value="0">Select Programme Name</option>
+          <option value="1">Programme Name 1</option>
+          <option value="2">Programme Name 1</option>
+          <option value="3">Programme Name 1</option>
+          <option value="4">Programme Name 1</option>
+          <option value="5">Programme Name 1</option>
+        </select>
+      </div>
+      
+      <div class="form-action">
+        <input class="submit" type="submit">
+        <input class="reset" type="reset">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

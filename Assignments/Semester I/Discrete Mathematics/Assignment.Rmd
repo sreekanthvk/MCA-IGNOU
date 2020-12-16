@@ -1,0 +1,37 @@
+---
+title: "Assignment"
+author: "Sreekanth"
+date: "December 5, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+a. State and explain De Morgan's Law for Boolean Algebra
+
+Theorem 1: Let B = (S, ∨, ∧, ٰ , O, I) be a Boolean algebra. De Morgan's Laws hold ∀x, y ∈ S.
+
+```{Demorgans laws}
+De Morgan’s laws : 
+(x ∨ y)' = x' ∧ y' , --  Statement 1
+(x ∧ y)' = x' ∨ y'., --  Statement 2
+```
+De Morgan's Laws for Boolean Algebra states that the following 
+The negation of a disjunction is the conjunction of the negations of the propositions; 
+and the negation of a conjunction is the disjunction of the negations of the propositions;
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

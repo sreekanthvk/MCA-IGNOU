@@ -24,22 +24,22 @@ int main()
     high=num_of_strings-1;
     while( low <= high )
     {
-    mid=(low+high)/2;
-    if (strcmp(key,a[mid])==0)
-    {
-        printf("key found at the position %d\n",mid+1);
-        exit(0);
-    }
-    else if(strcmp(key,a[mid])>0)
-    {
-        high=high;
-        low=mid+1;
-    }
-    else
-    {
-        low=low;
-        high=mid-1;
-    }
+		mid=(low+high)/2;
+		if (strcmp(search_string,string_list[mid])==0)
+		{
+			printf("key found at the position %d\n",mid+1);
+			exit(0);
+		}
+		else if(strcmp(search_string,string_list[mid])>0)
+		{
+			high=high;
+			low=mid+1;
+		}
+		else
+		{
+			low=low;
+			high=mid-1;
+		}
     }
     printf("String not found\n");
     return 0;
