@@ -1,3 +1,7 @@
+ /* a program to calculate the daily wages for each worker (if 7 workers are employed in an iron and hardware shop)
+  * at an hourly basis of Rs.100/- (with a constraint that each worker may be allowed maximum upto 4 hours only per day). 
+  * It should display the name of the worker, date and total wages for that day.
+  */
 #include<stdio.h>
 #include<string.h>
 
