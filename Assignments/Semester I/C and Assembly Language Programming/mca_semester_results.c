@@ -19,38 +19,33 @@ int main()
     int choice; 
     do
     {
-        do
+        
+        printf("===========================MENU===========================\n");
+        printf("1. Registration Status\n");
+        printf("2. Courses in the Current Semester\n");     
+        printf("3. Assignment Submission Schedules\n");
+        printf("4. Assignment Marks\n");          
+        printf("5. Term End Exam Marks\n");  
+        printf("6. Exit\n"); 
+        printf("Enter your choice:"); 
+        scanf(" %d", &choice);
+        switch(choice)
         {
-            
-            printf("===========================MENU===========================\n");
-            printf("1. Registration Status\n");
-            printf("2. Courses in the Current Semester\n");     
-            printf("3. Assignment Submission Schedules\n");
-            printf("4. Assignment Marks\n");          
-            printf("5. Term End Exam Marks\n");  
-            printf("6. Exit\n"); 
-            printf("Enter your choice:"); 
-            scanf(" %d", &choice);
-            switch(choice)
-            {
-                case 1: printf("Status");
-                        break;
-                case 2: printf("Courses");
-                        break;                    
-                case 3: printf("Courses");
-                        break;     
-                case 4: printf("Status");
-                        break;
-                case 5: printf("Courses");
-                        break;                    
-                case 6: printf("Courses");
-                        break; 
-                default: printf("Invalid entry. Try again");
-            }
+            case 1: printf("Status");
+                    break;
+            case 2: printf("Courses");
+                    break;                    
+            case 3: printf("Courses");
+                    break;     
+            case 4: printf("Status");
+                    break;
+            case 5: printf("Courses");
+                    break;                    
+            case 6: printf("Courses");
+                    break; 
+            default: printf("Invalid entry. Try again");
+        }
 
-        } while (choice < 1 || choice > 6); 
-        printf("Do you want to continue? (Y for continue, any other key for exit)\n");
-        scanf(" %c", &response);
-    }while(response == 'Y' || response == 'y');
+    } while (choice != 6); 
     return 0;
 }

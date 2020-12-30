@@ -6,17 +6,23 @@
  */
 #include<stdio.h>
 #include<math.h>
-double simple_interest(double principal, float period, float rate)
+void simple_interest(double principal, float period, float rate)
 {
+    double amount;
     // interest is P*(r/100)*t
-    return (principal * ( 1 + (period * rate / 100)));
+    amount =  (principal * ( 1 + (period * rate / 100)));
+    printf("The maturity amount is %.2lf\n", amount);
+    printf("The simple interest is: %.2lf\n", amount - principal);
 }
 
-double compound_interest(double principal, float period, float rate)
+void compound_interest(double principal, float period, float rate)
 {
     // amount after given years at calculating annually 
     // P(1+(r/1))^t
-    return ( principal * (pow(( 1 + rate / 100), period)) );
+    double amount;
+    amount = ( principal * (pow(( 1 + rate / 100), period)) );
+    printf("The maturity amount is %.2lf\n", amount);
+    printf("The compound interest is: %.2lf\n", amount - principal);
 }
 
 int main()
@@ -39,9 +45,9 @@ int main()
     scanf(" %c", &choice);
     switch (choice)
     {
-        case 'a': printf("The maturity amount is %.2lf \n", simple_interest(principal, time_period, interest_rate));
+        case 'a':  simple_interest(principal, time_period, interest_rate);
                 break;
-        case 'b': printf("The maturity amount is %.2lf \n", compound_interest(principal, time_period, interest_rate));
+        case 'b': compound_interest(principal, time_period, interest_rate);
                 break;
         default: printf("Exiting...\n");
     }
